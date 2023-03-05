@@ -10,7 +10,7 @@ class Kernel extends ConsoleKernel
 {
 
     protected $commands = [
-        SeedingCommand::class
+        Commands\SeedingCommand::class
     ];
     /**
      * Define the application's command schedule.
@@ -20,7 +20,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('seeding:run')->everyThirtyMinutes();
+        $schedule->command('seeding:run')->everyMinute();
     }
 
     /**
