@@ -1,9 +1,15 @@
-<script setup lang="ts">
-import ApiTest from "@/components/ApiTest.vue";
-</script>
-
 <template>
-  <main>
-    <api-test></api-test>
-  </main>
+  <hello-world />
 </template>
+
+<script>
+  import HelloWorld from '../components/HelloWorld'
+
+  export default {
+    name: 'Home',
+
+    components: {
+      HelloWorld,
+    },
+  }
+</script>
